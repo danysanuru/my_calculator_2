@@ -9,7 +9,7 @@
 			var num = document.getElementById("n1");
 			switch(a) {
 				case 0:
-					num.value = "";      // cls
+					num.value = "";      // cls ; agrego un boton para borrar el campo.
 					break;
 				case 1:     // x^3
 					num.value = Math.pow(num.value, 3);
@@ -22,6 +22,9 @@
 					num.value = 1 / num.value ; 
 					break;
 
+				case 4:    // x^4
+					num.value = Math.pow( num.value, 4);
+					break;
 			}
 		}
 		</script>
@@ -34,6 +37,8 @@
 			<button onclick="dan_oper(1)"> x^3 </button>     
 			<button onclick="dan_oper(2)"> x^2 </button>     
 			<button onclick="dan_oper(3)"> 1/x </button>     
+			<button onclick="dan_oper(4)"> x^4 </button>
+			<button onclick="dan_oper(0)"> CLEAR </button>
 		</p>
 	</body>
 </html>
