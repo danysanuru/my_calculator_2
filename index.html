@@ -16,7 +16,10 @@
 					break;
 
 				case 2:    // x^2
-					num.value = Math.pwe(num.value,2);
+					num.value = Math.pow(num.value,2);
+					break;
+				case 3:   // 1/x inverse
+					num.value = 1 / num.value ; 
 					break;
 
 			}
@@ -30,6 +33,7 @@
 		<p>
 			<button onclick="dan_oper(1)"> x^3 </button>     
 			<button onclick="dan_oper(2)"> x^2 </button>     
+			<button onclick="dan_oper(3)"> 1/x </button>     
 		</p>
 	</body>
 </html>
